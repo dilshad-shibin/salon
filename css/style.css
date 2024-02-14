@@ -1,0 +1,361 @@
+/* Fonts */
+@font-face {
+    font-family: Railway-Med;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: Railway-Bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: Railway-BoldItalic;
+    src: url(../fonts/Raleway-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Railway-ExtraBold;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+/* Color */
+:root{
+    --text: #231F20;
+    --yellow: #FECE2F;
+    --red: #EF4030;
+    --orange: #E08853;
+    --green: #4B7660;
+    --white: #fff; 
+    --border: #322F31;
+    --skin: #E0885333;
+    --gray: #666666;
+    --lightgray: #ccc;
+    --medgray: #FFFFFF33;
+}
+
+/* Home */
+.flex{
+    display: flex;
+}
+img{
+    max-width: 100%;
+}
+.pad0{
+    padding: 0;
+}
+.container-fluid{
+    padding: 0 50px;
+}
+.container{
+    max-width: 1410px;
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+.row{
+    margin: 0;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header .logo{
+    width: 25%;
+}
+header nav{
+    margin-top: 62px;
+}
+header ul{
+    column-gap: 93px;
+    padding: 0;
+    margin: 0;
+    justify-content: end;
+}
+header nav .search img{
+    width: 18px;
+    margin-left: 10px;
+}
+header nav .search{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 1;
+    height: 40px;
+}
+header nav .search input{
+    display: none;
+    padding: 5px;
+    border-color: var(--text);
+    border-radius: 5px;
+    font-family: Railway-Med;
+}
+header nav .search input.display{
+    display: block;
+}
+header a{
+    font-family: Railway-Med;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -.13px;
+    color: var(--text);  
+    text-transform: capitalize;
+    text-decoration: none;
+}
+header .logo img{
+    width: 173px;
+    background-color: #fff;
+    padding: 28px;
+    box-shadow: 5px 5px 10px #00000017;
+}
+header nav{
+    width: 75%;
+}
+nav .menu_button{
+    display: none;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    list-style: none;
+    transition: .3s all ease-in-out;
+}
+nav ul li a:hover{
+    color: var(--red);
+}
+.mainBanner{
+    background-color: var(--yellow);
+    padding: 147px 0 0;
+}
+.mainBanner .container{
+    max-width: 1768px;
+}
+.mainBanner .col_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+}
+.mainBanner h1{
+    font-family: Railway-Bold;
+    font-size: 120px;
+    line-height: 120px;
+    margin-right: -300px;
+    z-index: 1;
+    color: var(--white);
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.mainBanner span{
+    position: relative;
+    width:fit-content
+}
+.mainBanner span::after{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: -2%;
+    width: 104%;
+    height: 63%;
+    z-index: -1;
+}
+.red::after{
+    background-color: var(--red);
+}
+.green::after{
+    background-color: var(--green);
+}
+.orange::after{
+    background-color: var(--orange);
+}
+.yellow::after{
+    background-color: var(--yellow);
+}
+.mainBanner p{
+    font-family: Railway-Med;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--text);
+    margin: 30px 0;
+    max-width: 470px;
+}
+.button{
+    font-family: Railway-Bold;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 14px 25px 14px 30px;;
+    text-decoration: none;
+    color: var(--white);
+    width: max-content;
+    position: relative;
+    z-index: 1;
+}
+.button:hover::after{
+    top: 0;
+    left: 0;
+}
+.button img{
+    width: 21px;
+    margin-left: 10px;
+}
+.button::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: .3s all ease-in-out;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border: 2px solid var(--border);
+}
+.mainBanner .col_right img{
+    margin-bottom: -70px;
+}
+.partnerSec{
+    padding: 240px 0 175px;
+}
+.box{
+    position: relative;
+    width: fit-content;
+    padding: 0 35px 35px 0;
+}
+.box::after{
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: calc( 100% - 35px );
+    height: calc( 100% - 35px );
+}
+.box img{
+    position: relative;
+    z-index: 1;
+}
+.skin::after{
+    background-color: var(--skin);
+}
+.partnerSec .content{
+    display: flex;
+    max-width: 562px;
+}
+.partnerSec .col_right{
+    padding-left: 15px;
+}
+.partnerSec .col_left{
+    padding-right: 15px;
+}
+.partnerSec .line{
+    background-color: var(--yellow);
+    height: 2px;
+    width: 16%;
+    margin: 65px 4.5% 0 0;
+}
+.partnerSec .details{
+    width: 80.5%;
+}
+.partnerSec h2{
+    font-family: Railway-Bold;
+    font-size: 50px;
+    line-height: 75px;
+    color: var(--text);
+    margin: 30px 0 0;
+}
+.partnerSec h3{
+    font-family: Railway-BoldItalic;
+    font-size: 30px;
+    line-height: 75px;
+    color: var(--green);
+    margin: -15px 0 0;
+}
+.partnerSec p{
+    font-family: Railway-Med;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--gray);
+    margin: 0;
+}
+.partnerSec .col_right div{
+    margin-left: auto;
+}
+.partnerSec .button img{
+    margin-left: 0px;
+}
+.partnerSec .button{
+    padding: 19px 20px 19px 28px;
+    margin: auto;
+}
+.eventSec{
+    background-color: var(--text);
+    padding: 150px 0;
+}
+.eventSec h2{
+    font-family: Railway-ExtraBold;
+    font-size: 65px;
+    line-height: 75px;
+    color: var(--white);
+    margin: 0;
+    max-width: 500px;
+    border-width: 0 0 0 15px;
+    border-style: solid;
+    border-color: var(--green);
+    padding-left: 15px;
+}
+.eventSec p{
+    font-family: Railway-Med;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--lightgray);
+    margin: 0;
+    max-width: 563px;
+}
+.eventSec .button::before{
+    border-color: #D9D9D9;
+}
+.eventSec .eventSlider .eachSlider{
+    display: flex;
+}
+.eventSec .eventSlider .eachSlider >div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+}
+.eventSec .eventSlider .eachSlider .col_left{
+    padding-right: 15px;
+    margin-bottom: 100px;
+}
+.midgray:after{
+    background-color: var(--medgray);
+}
+.slick-arrow{
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: auto;
+    height: 41px;
+}
+.slick-arrow:hover{
+    filter: grayscale(1);
+}
+.slick-next{
+    left: 50px;
+    transform: rotate(180deg);
+    bottom: 21px;
+}
+.slick-slide{
+    margin: 0 15px;
+}
+.slick-list{
+    margin: 0 -15px;
+}

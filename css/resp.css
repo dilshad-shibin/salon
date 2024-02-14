@@ -1,0 +1,185 @@
+@media screen and ( max-width: 1600px ){
+    .mainBanner h1{
+        font-size: 100px;
+        line-height: 100px;
+    }
+    p{
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+}
+@media screen and ( max-width: 1500px ){
+    header .logo img{
+        width: 150px;
+    }
+    header ul{
+        column-gap: 60px;
+    }
+    .mainBanner h1{
+        font-size: 84px;
+        line-height: 80px;
+    }
+    .partnerSec {
+        padding: 160px 0 110px;
+    }
+}
+@media screen and ( max-width: 1200px ){
+    .mainBanner p {
+        margin: 15px 0;
+    }
+    .mainBanner .col_right img {
+        margin-bottom: -25px;
+    }
+    .mainBanner {
+        padding: 170px 0 0;
+    }
+    .partnerSec h2 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .partnerSec h3 {
+        font-size: 20px;
+        line-height: 60px;
+    }
+    .eventSec h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }   
+}
+@media screen and ( max-width: 991px ){
+    .mainBanner .col_right img {
+        margin-bottom: 0px;
+    }
+    .mainBanner {
+        padding: 170px 0 60px;
+    }
+    nav{
+        position: relative;
+    }
+    nav .menu_button{
+        content: "";
+        background-image: url(../img/menu.svg);
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: 2px solid var(--border);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 14px;
+        display: flex;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    nav ul.flex{
+        display: none;
+    }
+    nav ul.flex.display{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        row-gap: 20px;
+        background-color: #fff;
+        z-index: 2;
+        padding: 20px 50px;
+    }
+    header nav .search {
+        top: -5px;
+        right: 50px;
+    }
+    header nav .search input{
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+    p {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+    .partnerSec {
+        padding: 60px 0 60px;
+    }
+}
+@media screen and ( max-width: 767px ){
+    .mainBanner h1 {
+       margin: 0;
+    }
+    .mainBanner .col_right img {
+        margin-top: 60px;
+    }
+    .mainBanner .col_right img {
+        margin-bottom: -100px;
+    }
+    header .logo {
+        width: 140px;
+    }
+    p {
+        font-size: 14px !important;
+        line-height: 18px !important;
+    }
+    .button {
+        font-size: 18px;
+        line-height: 18px;
+        padding: 14px 14px 14px 20px;
+    }
+    .partnerSec {
+        padding: 100px 0 60px;
+    }
+    .partnerSec .col_right div {
+        margin-left: 0;
+    }
+    .partnerSec .col_right {
+        margin-top: 50px;
+    }
+    .partnerSec .button{
+        margin-top: 30px;
+    }
+    .eventSec .eventSlider .eachSlider{
+        flex-direction: column;
+    }
+    .eventSec .eventSlider .eachSlider >div{
+        width: 100%;
+    }
+    .slick-arrow {
+        bottom: auto;
+        top: -50px;
+        left: auto;
+        right: 0;
+        height: 41px;
+    }
+    .slick-next {
+        bottom: auto;
+        top: -70px;
+        left: auto;
+    }
+    .slick-prev{
+        right: 50px;
+    }
+}
+@media screen and ( max-width: 600px ){
+    .mainBanner h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .partnerSec h2 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .partnerSec h3 {
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .eventSec h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media screen and ( max-width: 600px ){
+    .mainBanner h1{
+        font-size: 38px;
+        line-height: 38px;
+    }
+}
